@@ -197,7 +197,7 @@ var Validator = {
 					}
 					// max
 					if ($(this).attr('data-max') != undefined && $(this).val().length > parseFloat($(this).attr('data-max'))) {
-						Validator.showError(this, Validator.languages[Validator.language].textbox.max.replace('{characters}', $(this).attr('data-min')));
+						Validator.showError(this, Validator.languages[Validator.language].textbox.max.replace('{characters}', $(this).attr('data-max')));
 						hasErrors = true;
 					}
 
@@ -251,7 +251,7 @@ var Validator = {
 					}
 					// max
 					if ($(this).attr('data-max') != undefined && $(this).val().length > parseFloat($(this).attr('data-max'))) {
-						Validator.showError(this, Validator.languages[Validator.language].password.max.replace('{characters}', $(this).attr('data-min')));
+						Validator.showError(this, Validator.languages[Validator.language].password.max.replace('{characters}', $(this).attr('data-max')));
 						hasErrors = true;
 					}
 					// match
@@ -313,7 +313,7 @@ var Validator = {
 					}
 					// max
 					if ($(this).attr('data-max') != undefined && $(this).val().length > parseFloat($(this).attr('data-max'))) {
-						Validator.showError(this, Validator.languages[Validator.language].textarea.max.replace('{characters}', $(this).attr('data-min')));
+						Validator.showError(this, Validator.languages[Validator.language].textarea.max.replace('{characters}', $(this).attr('data-max')));
 						hasErrors = true;
 					}
 					// patterns
